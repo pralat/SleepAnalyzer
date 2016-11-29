@@ -43,19 +43,29 @@ Temporary Items
 .apdisk
 
 # Android Studio
-.gradle
+.gradle/
+gradle/
+gradlew
+gradlew.bat
 
 # Local configuration file (sdk path, etc)
-src/Android/SleepAnalyzer/local.properties
+# src/Android/SleepAnalyzer/local.properties
+local.properties
 
-src/Android/SleepAnalyzer/.idea/workspace.xml
-src/Android/SleepAnalyzer/.idea/libraries
+# src/Android/SleepAnalyzer/.idea/workspace.xml
+**/.idea/workspace.xml
+# src/Android/SleepAnalyzer/.idea/libraries
+**/.idea/libraries/
 
-src/Android/SleepAnalyzer/build
-src/Android/SleepAnalyzer/app/build
+# generated build directories
+# this covers all directories named build
+build/
+
+# Want the apk so QA can download and test without building
+!*.apk
 
 # Android Studio captures folder
-/captures
+captures/
 
 # Explicit files from Interaxon we do not want to distribute
 # src/Android/SleepAnalyzer/app/libs/libmuse_android.jar
